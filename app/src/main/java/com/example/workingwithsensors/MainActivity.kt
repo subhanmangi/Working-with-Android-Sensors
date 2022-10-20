@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() , SensorEventListener{
 
 
         } else {
-            // Failure! No proximity sensor.
+            // Failure! No GYROSCOPE sensor.
         }
 
     }
@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() , SensorEventListener{
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        //test
+        //We are not using this method
         println("Accuracy changed: "+accuracy)
     }
 }
